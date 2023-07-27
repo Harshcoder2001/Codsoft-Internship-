@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute to Jane Doe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+        }
+
+        main {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        h1 {
+            margin-bottom: 0;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tribute to Atal Bihari Bajpayee</h1>
+    </header>
+    <main>
+        <img src="https://placehold.it/400x300" alt="Atal Bihari Bajpayee">
+        <h2>Atal Bihari Bajpayee</h2>
+        <p>
+            Atal Bihari Vajpayee was an Indian politician and statesman[1] who served three terms as the 10th Prime Minister of India, first for a term of 13 days in 1996, then for a period of 13 months from 1998 to 1999, followed by a full term from 1999 to 2004. Vajpayee was one of the co-founders and a senior leader of the BJP. He was a member of the RSS, a Hindu nationalist volunteer organisation. He was the first Indian prime minister not of the INC to serve a full term in office. He was also a renowned poet and a writer.
+        </p>
+        <p>
+            He was a member of the Indian Parliament for over five decades, having been elected ten times to the Lok Sabha, the lower house, and twice to the Rajya Sabha, the upper house. He served as the MP (LS) for Lucknow, retiring from active politics in 2009 due to health concerns. He was among the founding members of the BJS, of which he was president from 1968 to 1972. The BJS merged with several other parties to form the JP, which won the 1977 general election. In March 1977, Vajpayee became the Minister of External Affairs in the cabinet of Prime Minister Morarji Desai. He resigned in 1979, and the Janata alliance collapsed soon after. Former members of the BJS formed the BJP in 1980, with Vajpayee its first president.
+        </p>
+        <p>
+            Vajpayee is considered one of the most respected prime ministers of India, receiving praise from the opposition as well. He scores high on India's top ranked prime ministers and is regarded as one of the best prime ministers in Indian history. The administration of Narendra Modi declared in 2014 that Vajpayee's birthday, 25 December, would be marked as Good Governance Day. In 2015, he was conferred India's highest civilian honour, the Bharat Ratna, by the president of India, Pranab Mukherjee. He died in 2018 of age-related illness.
+        </p>
+        <p>
+            Vajpayee was born into a Hindu Brahmin family on 25 December 1924 in Gwalior, Madhya Pradesh. His mother was Krishna Devi and his father was Krishna Bihari Vajpayee.His father was a school teacher in their home town. His grandfather, Shyam Lal Vajpayee, had migrated to Morena near Gwalior from his ancestral village of Bateshwar in the Agra district of Uttar Pradesh.
+        </p>
+        <p>
+            Vajpayee did his schooling at the Saraswati Shishu Mandir in Gwalior. In 1934, he was admitted to the Anglo-Vernacular Middle (AVM) School in Barnagar, Ujjain district, after his father joined as headmaster. He subsequently attended Gwalior's Victoria College, Agra University (now Maharani Laxmi Bai Govt. College of Excellence) where he graduated with a Bachelor of Arts in Hindi, English and Sanskrit. He completed his post-graduation with a Master of Arts in political science from DAV College, Kanpur, Agra University.
+        </p>
+    </main>
+    <footer>
+        <p>&copy; 2023 Harsh Mishra. All rights reserved.</p>
+    </footer>
+</body>
+</html>

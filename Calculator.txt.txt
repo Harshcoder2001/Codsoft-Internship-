@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="display" id="display">0</div>
+    <button class="btn" id="clear">C</button>
+    <button class="btn" id="divide">/</button>
+    <button class="btn" id="multiply">*</button>
+    <button class="btn" id="subtract">-</button>
+    <button class="btn" id="add">+</button>
+    <button class="btn" id="equals">=</button>
+    <!-- Buttons for numbers -->
+    <button class="btn" id="one">1</button>
+    <button class="btn" id="two">2</button>
+    <button class="btn" id="three">3</button>
+    <button class="btn" id="four">4</button>
+    <button class="btn" id="five">5</button>
+    <button class="btn" id="six">6</button>
+    <button class="btn" id="seven">7</button>
+    <button class="btn" id="eight">8</button>
+    <button class="btn" id="nine">9</button>
+    <button class="btn" id="zero">0</button>
+    <button class="btn" id="decimal">.</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  max-width: 300px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.display {
+  grid-column: 1 / -1;
+  text-align: right;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+.btn {
+  font-size: 1.2rem;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #f0f0f0;
+}
+// Variables to keep track of the current calculation
+let displayValue = '0';
+let currentValue = null;
+let previousOperator = null;
+
+// Function to update the display with the current value
+function updateDisplay() {
+  const display = document.getElementById('display');
+  display.textContent = displayValue;
+}
+
+// Function to handle number button clicks
+function handleNumberClick(number) {
+  if (displayValue === '0') {
+    displayValue = number;
+  } else {
+    displayValue += number;
+  }
+  updateDisplay();
+}
+
+// Function to handle operator button clicks
+function handleOperatorClick(operator) {
+  if (currentValue === null) {
+    currentValue = parseFloat(displayValue);
+  } else if (previousOperator) {
+    performCalculation();
+  }
+  previousOperator = operator;
+  displayValue = '0';
+}
+
+// Function to perform the calculation when an operator is clicked
+function performCalculation() {
+  switch (previousOperator) {
+    case '+':
+      currentValue += parseFloat(displayValue);
+      break;
+    case '-':
+      currentValue -= parseFloat(displayValue);
+      break;
+    case '*':
+      currentValue *= parseFloat(displayValue);
+      break;
+    case '/':
+      currentValue /= parseFloat(displayValue);
+      break;
+  }
+}
+
+// Function to handle the equals button click
+function handleEqualsClick() {
+  if (previousOperator) {
+    performCalculation();
+    previousOperator = null;
+    displayValue = currentValue.toString();
+    currentValue = null;
+    updateDisplay();
+  }
+}
+
+// Function to handle the clear button click
+function handleClearClick() {
+  displayValue = '0';
+  currentValue = null;
+  previousOperator = null;
+  updateDisplay();
+}
+
+// Event listeners for number buttons
+document.getElementById('one').addEventListener('click', () => handleNumberClick('1'));
+document.getElementById('two').addEventListener('click', () => handleNumberClick('2'));
+// ... Repeat for other number buttons (three, four, five, six, seven, eight, nine, zero, decimal)
+
+// Event listeners for operator buttons
+document.getElementById('add').addEventListener('click', () => handleOperatorClick('+'));
+document.getElementById('subtract').addEventListener('click', () => handleOperatorClick('-'));
+document.getElementById('multiply').addEventListener('click', () => handleOperatorClick('*'));
+document.getElementById('divide').addEventListener('click', () => handleOperatorClick('/'));
+
+// Event listeners for equals and clear buttons
+document.getElementById('equals').addEventListener('click', handleEqualsClick);
+document.getElementById('clear').addEventListener('click', handleClearClick);
+
+// Initial display update
+updateDisplay();
+
+

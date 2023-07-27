@@ -1,0 +1,91 @@
+<html>
+<head>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#accomplishments">Accomplishments</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I'm Harsh. I'm persuing B.Tech in Computer Science with a passion for web development. I'm working on my skills such as Java,C,C++,Python,HTML CSS. I believe in continuous learning and enjoy exploring new opportunities to expand my skills.</p>
+  </section>
+
+  <section id="accomplishments">
+    <h2>Accomplishments</h2>
+    <ul>
+      <li>Completed C programming course</li>
+      <li>Completed C++ programming course</li>
+      <li>Completed website language course</li>
+      <li>Completed Microsoft Azure Application Course</li>
+      <!-- Add more accomplishments as needed -->
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>If you'd like to get in touch with me, feel free to reach out via email at mishraharsh1010@gmail.com or connect with me on linkedin account Harsh Mishra. I'm open to collaboration, job opportunities, or just a friendly conversation!</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Harsh Mishra. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+section {
+  padding: 20px;
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
