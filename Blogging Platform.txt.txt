@@ -1,0 +1,181 @@
+<html>
+   <head>
+      <title><i>FOOD BLOG</i></title>
+      <link rel="icon"     href="https://image.flaticon.com/icons/svg/13/13706.svg" type="image/gif" sizes="16x16">
+       <link rel="stylesheet" href="main.css" >
+<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-  awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="intro">
+<p id="name" name="intro">Hello Friends Welcome to my Food Blog Site</i></b></p>
+</div>
+</body>
+</html>
+<div>
+  <br>
+    <center>
+       <h1><i>**HEAVEN FOR FOODIES***</i></h1>
+    </center>
+  <br>
+</div>
+<div class="blogs">
+  <div class="column">
+    <div class="card">
+       <a href="post1.html">
+          <img src="C:\Users\hp\Downloads\pizza.jpg" alt="image" height="300" width="400"/></a>
+     <h3>Cheese Pizza</h3>
+     <p>When you take the first bite of pizza..you will lose into it's taste</p>
+  </div>
+ </div>
+<div class="column">
+<div class="card">
+<img src="C:\Users\hp\Downloads\noodles.jpg" alt="image" height="300" width="400"/>
+<h3>Black Bean Noodles</h3>
+<p>Let's tatse the spice and a pinch of sweetness together</p>
+</div>
+</div>
+<div class="column">
+<div class="card">
+<img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2019/02/chicken-biryani-recipe-500x500.jpg" alt="image" height="300" width="400"/>
+<h3>Chicken Biryani</h3>
+<p>With a bite of chicken with rice...give a blast in your mouth</p>
+</div>
+</div>
+</div>
+<div class="blogs">
+<div class="column">
+<div class="card">
+<img src="C:\Users\hp\Downloads\burger.webp" height="300" width="400"/>
+<h3>Burger and Fries</h3>
+<p>Burger and Fries best combo is here!!</p>
+</div>
+</div>
+<div class="column">
+<div class="card">
+<img src="C:\Users\hp\Downloads\momo.jpg" height="300" width="400"/>
+<h3>Momos</h3>
+<p>Tasty Paneer Momos with spicy chutney let's have it</p>
+</div>
+</div>
+<div class="column">
+<div class="card">
+<img src="C:\Users\hp\Downloads\tacos.webp" height="300" width="400"/>
+<h3>Taco</h3>
+<p>Yummy,Yummy!Taco with mayo dip </p>
+</div>
+</div>
+</div>
+<div>
+<center>
+<p>Copyright &copy; 2023 All Rights Reserved by Harsh Mishra </p>
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-instagram"></a>
+</div>
+</center>
+</footer>
+.intro{
+height: 70%;
+width: 100%;
+background-image: url("https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-1.2.1&w=1000&q=80");
+background-size: cover;
+}
+#name{
+font-family: cursive;
+padding-left:40%;
+padding-top: 10%;
+padding-bottom: 40%;
+padding-right: 20%;
+font-size:xx-large;
+}
+* {
+box-sizing: border-box;
+}
+.column {
+float: left;
+width: 33%;
+padding: 5px 5px;
+}
+.blog {margin: 0 -5px;}
+.blog:after {
+content: "";
+display: table;
+clear: both;
+}
+.card {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+padding: 16px;
+text-align: center;
+background-color: #f1f1f1;
+}
+@media screen and (max-width: 600px) {
+.column {
+width: 100%;
+display: block;
+margin-bottom: 20px;
+}
+img{
+height:auto;
+width: auto;
+}
+}
+#about{
+text-align: center;
+font-size: x-large;
+}
+.aboutme{
+padding-top: 5%;
+padding-bottom: 5%;
+}
+#mypic{
+border-radius: 50%;
+}
+.fa{
+padding: 20px;
+font-size: 30px;
+width: 50px;
+text-align: center;
+text-decoration: none;
+margin: 5px 2px;
+border-radius: 50%
+}
+.fa:hover {
+opacity: 0.7;
+}
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+.fa-instagram {
+background: #125688;
+color: white;
+}
+Next I have added the styles for blog post template. post.css
+
+.image{
+position: absolute;
+top: 5vh;
+left: 3vw;
+border-radius: 50%;
+}
+.video{
+position: absolute;
+left: 3vw;
+bottom: 4vw;
+}
+.desc{
+position: absolute;
+margin-left: 12cm;
+margin-top: 2cm;
+margin-bottom: 2cm;
+margin-right: 1cm;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+text-align: center;
+background-color: #f1f1f1;
+}
+.posts{
+margin-top: 5px;
+margin-bottom: 5px;
+margin-left: 5px;
+margin-right: 5px;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+background-color: #f1f1f1;
